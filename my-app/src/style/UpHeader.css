@@ -1,0 +1,29 @@
+.UpHeader {
+    width: 100%;
+    background-color: #0E185F;
+    color: white;
+    display: flex;
+    height: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.up1 {
+    flex:1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.up2 {
+    flex:1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.up2 span {
+    color: red;
+    margin-right: 0.5rem;
+}
