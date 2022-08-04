@@ -1,5 +1,5 @@
 .card-main {
-    width: 22vw;
+    width: 18vw;
     position: relative;
     border: 1px solid #ddd;
     margin: 0.5rem;
@@ -11,7 +11,7 @@
 
 
 .card-main img {
-    width: 22vw;
+    width: 18vw;
 }
 .img-container {
     width: 22vw;
@@ -22,10 +22,10 @@
 
 .button1 {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 2rem;
-    height: 2rem;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     cursor: pointer;
     color: white;

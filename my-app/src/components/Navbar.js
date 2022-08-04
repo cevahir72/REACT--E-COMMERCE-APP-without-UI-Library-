@@ -1,5 +1,6 @@
 import React from 'react';
-import "../style/Navbar.css"
+import "../style/Navbar.css";
+import {Link} from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -8,20 +9,19 @@ const Navbar = () => {
             <span>EN</span>
             <div className="search">
                 <p><ion-icon  name="search-outline"></ion-icon></p>
-                <input id='searchBar' type="text" />
+                <input id='searchBar' type="text" placeholder='Search...'/>
             </div>
         </div>
         <div className="mid">
-                <h1>.MK SOFTWARE STORE</h1>
+            <Link style={{textDecoration:"none"}} to="/"><h1>.MK STORE</h1></Link>   
         </div>
         <div className="right">
             <ul>
-                <li>LOGIN</li>
-                <li>REGISTER</li>
-                <li> <ion-icon style={{fontSize:"19px"}} name="cart-outline"></ion-icon></li>
+                <li><Link style={{textDecoration:"none"}} to="/login">LOGIN</Link></li>
+                <li><Link style={{textDecoration:"none"}} to="/register">REGISTER</Link></li>
+                <li><Link style={{textDecoration:"none"}} to="/checkout"> <ion-icon style={{fontSize:"19px"}} name="cart-outline"></ion-icon></Link></li>   
             </ul>
         </div>
-        
     </div>
   )
 }

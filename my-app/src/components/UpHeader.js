@@ -1,5 +1,5 @@
 import React from 'react';
-import "../style/UpHeader.css"
+import "../style/UpHeader.css";
 
 const UpHeader = () => {
   return (

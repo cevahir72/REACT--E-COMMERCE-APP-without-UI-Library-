@@ -3,11 +3,13 @@ import "../style/Categories.css";
 import slider from "../helpers/slider.json"
 
 
-const Categories = ({ dropdown, setDropdown, carousel, setCarousel }) => {
+const Categories = ({ dropdown, setDropdown, carousel, setCarousel,basket,setBasket }) => {
+  
+  // DROPDOWN MENU
   const drop = () => {
     setDropdown(dropdown === "button-open" ? "button-close" : "button-open");
   };
-
+  //CAROUSEL
   const slide =(e)=> {
     if(e.target.className === "first"){
         setCarousel( carousel = "inner")
@@ -21,6 +23,9 @@ const Categories = ({ dropdown, setDropdown, carousel, setCarousel }) => {
     }
 
   }
+  // CART ITEMS
+  
+
 
   return (
     <div className="Categories">
@@ -53,7 +58,7 @@ const Categories = ({ dropdown, setDropdown, carousel, setCarousel }) => {
                 slider.map(item=>{
                     return(
                         <div className="card" key={item.id}>
-                            <img className="slide-image" src={item.image} alt= {item.title} />
+                            <img style={{ height:"52vh"}} className="slide-image" src={item.image} alt= {item.title} />
                             <div className="content">
                                 <h1>{item.title}</h1>
                             </div>
@@ -74,6 +79,9 @@ const Categories = ({ dropdown, setDropdown, carousel, setCarousel }) => {
           </div>
           
         </div>
+      </div>
+      <div className="basket">
+        <h1>CART ITEMS</h1>
       </div>
     </div>
   );

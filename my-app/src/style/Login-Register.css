@@ -1,0 +1,106 @@
+.login {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("https://images.ctfassets.net/rxqefefl3t5b/6I2vL9f0IVsDQ8qFgdrxH7/7660c4bab3116a4a04025d5c4802efa5/Virgin-Red-online-shopping-offers.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.login-container {
+    width: 35%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+
+
+}
+.login-icon {
+    margin-bottom: 2rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(231, 101, 45);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: larger;
+}
+
+.user-name , .user-password , .keep-log {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.user-name, .user-password {
+    
+    border: 1px solid rgb(168, 166, 166);
+    background-color: white;
+    width: 50%;
+    height: 3rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-radius: 2rem;
+    opacity: 1;
+    
+}
+
+.user-name input {
+    width: 75%;
+    height: 2rem;
+    font-size: 1.3rem;
+    border: 0px solid;
+}
+
+
+.user-password input {
+    width: 75%;
+    height: 2rem;
+    font-size: 1.3rem;
+    color: black;
+    border: none;
+}
+.user-name input:focus , .user-password input:focus {
+    outline: none;
+    
+}
+.keep-log {
+    width: 50%;
+}
+.keep-log input {
+    margin-right: 1rem;
+}
+.Login-button {
+    width: 50%;
+    font-size: 1.3rem;
+    padding: 10px 0 ;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: #6E85B7;
+    color: white;
+}
+
+.login-with {
+    display: flex;
+    justify-content: center;
+}
+
+.login-with h3 {
+    margin: 0 1rem;
+    cursor: pointer;
+}

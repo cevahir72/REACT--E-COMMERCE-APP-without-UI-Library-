@@ -1,7 +1,12 @@
 import React from 'react';
 import "../style/Card.css";
+import {useState,useEffect}from "react";
 
 const Card = ({product}) => {
+
+  const [basket, setBasket] = useState([]);
+
+
   return (
     <div className='card-main'>
       <button className='button1'>+</button>
