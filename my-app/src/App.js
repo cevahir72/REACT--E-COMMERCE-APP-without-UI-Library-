@@ -1,36 +1,33 @@
 import "./style/App.css";
 import Categories from "./components/Categories";
-import Navbar from "./components/Navbar";
-import UpHeader from "./components/UpHeader";
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import Featured from "./components/Featured";
-
-
+import Footer from "./components/Footer";
 
 function App() {
+  const [dropdown, setDrowdown] = useState("button-close");
 
-  const [dropdown,setDrowdown] = useState("button-close")
+  const [carousel, setCarousel] = useState("inner");
 
-  const [carousel,setCarousel] = useState("inner")
   
+
   useEffect(() => {
-    
     console.log(carousel);
+  }, [carousel]);
 
-  }, [carousel])
-  
-    
   return (
     <div className="App">
-      <div className="upper-part">
-      <UpHeader/>
-      <Navbar/>
+      <Categories
+        carousel={carousel}
+        setCarousel={setCarousel}
+        dropdown={dropdown}
+        setDropdown={setDrowdown}
+      />
+      <div className="Fea-Items">
+        <Featured />
       </div>
-      
-      <Categories carousel={carousel} setCarousel={setCarousel} dropdown={dropdown} setDropdown={setDrowdown}/>
-        <Featured/>
-        
-        
+
+      <Footer />
     </div>
   );
 }
