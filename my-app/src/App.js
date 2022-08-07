@@ -1,4 +1,8 @@
 import "./style/App.css";
+
+
+import "react-toastify/dist/ReactToastify.css"
+
 import Categories from "./components/Categories";
 import { useState, useEffect } from "react";
 import Featured from "./components/Featured";

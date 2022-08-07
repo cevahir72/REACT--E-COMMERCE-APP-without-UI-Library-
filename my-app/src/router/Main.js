@@ -6,10 +6,12 @@ import { Routes, Route} from "react-router-dom";
 import UpHeader from '../components/UpHeader';
 import Navbar from '../components/Navbar';
 import Checkout from '../pages/Checkout';
+import { ToastContainer } from "react-toastify";
 
 const Main = () => {
   return (
     <div>
+      <ToastContainer/>
       <UpHeader/>
       <Navbar/>
             <Routes>
