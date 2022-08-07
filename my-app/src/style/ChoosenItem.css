@@ -1,0 +1,13 @@
+.choosen{
+    display: flex;
+    padding-right: 2rem;
+}
+
+.choosen-inner-A, .choosen-inner-B, .choosen-inner-C {
+    flex:1
+
+}
+.choosen-inner-B, .choosen-inner-C {
+    display: flex;
+    justify-content: end;
+}

@@ -1,8 +1,19 @@
-import React from 'react';
+import {useEffect} from 'react';
 import "../style/Navbar.css";
 import {Link} from "react-router-dom";
+import { useSelector } from 'react-redux';
+
+
 
 const Navbar = () => {
+
+    const total = useSelector((state)=>state.cart.cartTotalQuantity)
+
+    useEffect(() => {
+        console.log(total);
+      }, [total])
+
+
   return (
     <div className='Navbar'>
         <div className="left">
@@ -13,13 +24,13 @@ const Navbar = () => {
             </div>
         </div>
         <div className="mid">
-            <Link style={{textDecoration:"none"}} to="/"><h1>.MK STORE</h1></Link>   
+            <Link style={{textDecoration:"none", color:"white",fontSize:"1.3rem"}} to="/"><h1>.MK Store</h1></Link>   
         </div>
         <div className="right">
             <ul>
-                <li><Link style={{textDecoration:"none"}} to="/login">LOGIN</Link></li>
-                <li><Link style={{textDecoration:"none"}} to="/register">REGISTER</Link></li>
-                <li><Link style={{textDecoration:"none"}} to="/checkout"> <ion-icon style={{fontSize:"19px"}} name="cart-outline"></ion-icon></Link></li>   
+                <li><Link style={{textDecoration:"none", color:"white"}} to="/login">LOGIN</Link></li>
+                <li><Link style={{textDecoration:"none" , color:"white"}} to="/register">REGISTER</Link></li>
+                <li style={{position:"relative"}}><Link style={{textDecoration:"none" , color:"white"}} to="/checkout"> <ion-icon style={{fontSize:"1.5rem"}} name="cart-outline"></ion-icon></Link><span className='totalCount'>{total}</span></li>   
             </ul>
         </div>
     </div>

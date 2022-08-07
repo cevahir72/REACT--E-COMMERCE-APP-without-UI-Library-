@@ -10,7 +10,7 @@ const Footer = () => {
             <p>19 Mayis Street <br />
                Kecioren / Ankara TURKEY</p>
             <h3>Phone Number:</h3>
-            <p>+90 544 962 23 23</p>
+            <p>+90 544 962 23 37</p>
         </div>
         <div className="footer-right">
             <h3>Follow us:</h3>

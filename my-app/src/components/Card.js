@@ -1,15 +1,29 @@
-import React from 'react';
+import {useEffect} from 'react';
 import "../style/Card.css";
-import {useState,useEffect}from "react";
+import { useSelector,useDispatch } from 'react-redux';
+import {addToCart,getTotals} from "../redux/cartSlice";
 
 const Card = ({product}) => {
 
-  const [basket, setBasket] = useState([]);
+  const dispatch = useDispatch()
+
+  const cart = useSelector((state)=>state.cart)
+
+  const handleAddToCart = (a)=>{
+    dispatch(addToCart(a))
+  }
+
+  useEffect(() => {
+    
+    dispatch(getTotals())
+  }, [cart,dispatch])
+  
+  
 
 
   return (
     <div className='card-main'>
-      <button className='button1'>+</button>
+      <button onClick={()=>handleAddToCart(product)} className='button1'>+</button>
       <div className='img-container'>
       <img  src={product.image} alt={product.title} />
       </div>
@@ -45,5 +59,6 @@ const Card = ({product}) => {
     </div>
   )
 }
+
 
 export default Card

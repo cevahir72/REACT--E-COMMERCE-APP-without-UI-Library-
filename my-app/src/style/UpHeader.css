@@ -1,7 +1,7 @@
 .UpHeader {
     width: 100%;
-    background-color: #0E185F;
-    color: white;
+    background-color: white;
+    color: black;
     display: flex;
     height: 2rem;
     font-family: 'Poppins', sans-serif;
@@ -25,5 +25,6 @@
 
 .up2 span {
     color: red;
+    font-weight: 600;
     margin-right: 0.5rem;
 }
