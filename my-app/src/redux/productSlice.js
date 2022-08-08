@@ -10,6 +10,7 @@ export const productSlice = createSlice({
     }
     
 })
+//planned , but - never used
 
 
 export default productSlice.reducer
