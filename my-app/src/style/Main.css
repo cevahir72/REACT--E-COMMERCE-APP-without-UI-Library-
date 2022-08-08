@@ -1,0 +1,14 @@
+.main-part {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 450px) {
+
+    .main-part {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+}

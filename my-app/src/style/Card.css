@@ -43,3 +43,58 @@
 .description h2 {
     color:rgb(241, 95, 79)
 }
+
+@media screen and (max-width: 450px) {
+
+    .card-main {
+        width: 40vw;
+        position: relative;
+        border: 1px solid #ddd;
+        margin: 0.5rem;
+        margin-bottom: 2rem;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    }
+    
+    
+    
+    .card-main img {
+        width: 40vw;
+    }
+    .img-container {
+        width: 22vw;
+        height: 20vh;
+        
+    }
+    
+    
+    .button1 {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        cursor: pointer;
+        color: white;
+        border: 1px solid rgb(241, 95, 79);
+        background-color: rgb(241, 95, 79);
+        font-weight: 600;
+        font-size: large;
+    }
+    
+    .description {
+        padding-left: 1rem;
+        
+    }
+    .description h3 {
+        font-size: 14px;
+        height: 30px;
+    }
+    
+    .description h2 {
+        color:rgb(241, 95, 79)
+
+}
+}

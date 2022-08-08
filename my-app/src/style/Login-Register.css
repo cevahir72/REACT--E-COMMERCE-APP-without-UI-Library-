@@ -104,3 +104,116 @@
     margin: 0 1rem;
     cursor: pointer;
 }
+
+@media screen and (max-width: 450px) {
+
+
+    .login {
+        width: 100%;
+        height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0;
+        padding-top: 10vh;
+        font-family: 'Poppins', sans-serif;
+        background-image: url("https://images.ctfassets.net/rxqefefl3t5b/6I2vL9f0IVsDQ8qFgdrxH7/7660c4bab3116a4a04025d5c4802efa5/Virgin-Red-online-shopping-offers.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .login h1{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+
+    .login-container {
+        width: 80%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding-top: 1rem;
+    
+    
+    }
+    .login-icon {
+        display: none;
+    }
+    
+    .user-name , .user-password , .keep-log {
+        display: flex;
+        font-size: 14px;
+        margin-bottom: 1rem;
+    }
+    
+    .user-name, .user-password {
+        
+        border: 1px solid rgb(168, 166, 166);
+        background-color: white;
+        width: 70%;
+        height: 2rem;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        border-radius: 2rem;
+        opacity: 1;
+        
+    }
+    
+    .user-name input {
+        width: 75%;
+        height: 1rem;
+        font-size: 1rem;
+        border: 0px solid;
+    }
+    
+    
+    .user-password input {
+        width: 75%;
+        height: 1rem;
+        font-size: 1rem;
+        color: black;
+        border: 0px solid;
+    }
+    .user-name input:focus , .user-password input:focus {
+        outline: none;
+        
+    }
+    .keep-log {
+        width: 75%;;
+        font-size: 14px;
+        margin-left: 25px;
+    }
+    .keep-log input {
+        margin-right: 1rem;
+    }
+    .Login-button {
+        width: 50%;
+        font-size: 1rem;
+        padding: 10px 0 ;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        border: none;
+        background-color: salmon;
+        color: white;
+    }
+    
+    .login-with {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .login-with h3 {
+        margin: 0 1rem;
+        cursor: pointer;
+    }
+
+}

@@ -30,7 +30,7 @@ const Navbar = () => {
             <ul>
                 <li><Link style={{textDecoration:"none", color:"white"}} to="/login">LOGIN</Link></li>
                 <li><Link style={{textDecoration:"none" , color:"white"}} to="/register">REGISTER</Link></li>
-                <li style={{position:"relative"}}><Link style={{textDecoration:"none" , color:"white"}} to="/checkout"> <ion-icon style={{fontSize:"1.5rem"}} name="cart-outline"></ion-icon></Link><span className='totalCount'>{total}</span></li>   
+                <li style={{position:"relative"}}><Link style={{textDecoration:"none" , color:"white"}} to="/checkout"> <ion-icon id="cart-symbol" style={{fontSize:"1.5rem"}} name="cart-outline"></ion-icon></Link><span className='totalCount'>{total}</span></li>   
             </ul>
         </div>
     </div>

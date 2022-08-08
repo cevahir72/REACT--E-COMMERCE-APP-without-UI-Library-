@@ -30,3 +30,54 @@
 .footer-list a {
     color: black;
 }
+
+@media screen and (max-width: 450px) {
+
+    .Footer {
+        width: 100%;
+        background-color: rgb(235, 232, 232);
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+    }
+    .Footer h3 {
+        font-size: 14px;
+    }
+    .Footer p {
+        font-size: 14px;
+    }
+    
+    .footer-up {
+        display: flex;
+        padding-top: 1.5rem;
+    }
+    
+    .footer-left , .footer-right {
+        flex: 1;
+        padding-left: 50px;
+    }
+    .footer-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    
+    .footer-list {
+        list-style: none;
+        line-height: 2rem;
+        padding-left: 0;
+    }
+    .footer-list a {
+        color: black;
+
+    }
+
+
+}

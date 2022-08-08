@@ -33,7 +33,7 @@ const Categories = ({
     <div className="Categories">
       <div className="category">
         <button onClick={drop} className="button">
-          <span id="span">CATEGORIES </span>
+          <span id="span">Categories </span>
           <ion-icon
             style={{ fontSize: "20px" }}
             name="arrow-down-outline"
@@ -62,7 +62,7 @@ const Categories = ({
               return (
                 <div className="card" key={item.id}>
                   <img
-                    style={{ height: "52vh" }}
+                    // style={{ height: "52vh" }}
                     className="slide-image"
                     src={item.image}
                     alt={item.title}

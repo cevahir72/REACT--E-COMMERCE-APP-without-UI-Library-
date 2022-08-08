@@ -7,10 +7,12 @@ import UpHeader from '../components/UpHeader';
 import Navbar from '../components/Navbar';
 import Checkout from '../pages/Checkout';
 import { ToastContainer } from "react-toastify";
+import "../style/Main.css"
+
 
 const Main = () => {
   return (
-    <div>
+    <div className='main-part'>
       <ToastContainer/>
       <UpHeader/>
       <Navbar/>
