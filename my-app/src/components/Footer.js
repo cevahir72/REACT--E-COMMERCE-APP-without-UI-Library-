@@ -15,9 +15,9 @@ const Footer = () => {
         <div className="footer-right">
             <h3>Follow us:</h3>
              <ul className="footer-list">
-                <li><ion-icon size="large" name="logo-instagram"></ion-icon></li>
-                <li><ion-icon size="large" name="logo-facebook"></ion-icon></li>
-                <li><ion-icon size="large" name="logo-linkedin"></ion-icon></li>
+                <li><a  href="https://www.instagram.com/kelesmevlut71/"><ion-icon size="large" name="logo-instagram"></ion-icon></a></li>
+                <li><a href="https://github.com/cevahir72"><ion-icon size="large" name="logo-github"></ion-icon></a></li>
+                <li><a href="https://www.linkedin.com/in/mevlut-keles-435607215"><ion-icon size="large" name="logo-linkedin"></ion-icon></a></li>
              </ul>
         </div>
       </div>

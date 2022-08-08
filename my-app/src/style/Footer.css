@@ -27,3 +27,6 @@
     list-style: none;
     line-height: 2rem;
 }
+.footer-list a {
+    color: black;
+}

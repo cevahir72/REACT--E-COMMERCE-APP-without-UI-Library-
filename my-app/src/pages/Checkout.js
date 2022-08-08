@@ -1,14 +1,19 @@
 import React from "react";
 import { useSelector , useDispatch} from "react-redux";
 import { Link } from "react-router-dom";
-import {resetCart} from "../redux/cartSlice";
+import {resetCart, removeItem} from "../redux/cartSlice";
 import "../style/Checkout.css"
 
 const Checkout = () => {
 
   const cartItem = useSelector((state) => state.cart.cartItems);
+  const cartTotal = useSelector((state)=>state.cart.cartTotalAmount);
 
   const dispatch = useDispatch()
+
+  const handleRemoveItem = (product)=> {
+    dispatch(removeItem(product))
+  }
 
   return (
     <div className="checkout">
@@ -33,14 +38,16 @@ const Checkout = () => {
               <div className="cart-items-" key={item.id}>
               <div className="cart-items-A">
                 <img src={item.image} alt={item.title} />
-                <span>{item.title}</span>
+                <div className="cart-items-A-inner">
+                <span><h4>{item.title}</h4></span>
+                <button onClick={()=>handleRemoveItem(item)}>Remove</button>
+                </div>
               </div>
               <div className="cart-items-B">
                 <h2>${item.price}</h2>
               </div>
               <div className="cart-items-B">
                 <h2>{item.cartQuantity}</h2>
-                <span>Remove</span>
               </div>
               <div className="cart-items-B">
                 <h2>${item.cartQuantity * item.price}</h2>
@@ -50,18 +57,20 @@ const Checkout = () => {
             
           })}
           <div className="cart-summary">
-            <button onClick={()=>dispatch(resetCart())} className="clear-cart">Clear Cart</button>
+            <div className="clear-cart">
+            <button onClick={()=>dispatch(resetCart())} >Clear Cart</button>
+            </div>
             <div className="cart-checkout">
               <div className="subtotal">
-                <span>Subtotal</span>
-                <span>$TOTAL</span>
+                <div className="subtotal-1"><h2>Subtotal</h2></div>
+                <div className="subtotal-2"><h2>${cartTotal}</h2></div>
               </div>
               <p>Taxes and Shipping Calculated at checkout</p>
-              <button>Check out</button>
+              <button className="checkout-button">Checkout</button>
               <div className="continiue-shopping">
-                <Link to="/">
-                  <ion-icon name="arrow-back-outline"></ion-icon>
-                  <span>Continiue Shopping</span>
+                <Link to="/" style={{textDecoration:"none"}}>
+                  <ion-icon  style={{textDecoration:"none"}} name="arrow-back-outline"></ion-icon>
+                  <span>  Continiue Shopping</span>
                 </Link>
               </div>
             </div>
