@@ -53,7 +53,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[product-gif](https://github.com/cevahir72/REACT--E-COMMERCE-APP-without-UI-Library-/blob/main/E-commerce.gif)
+![E-commerce](https://user-images.githubusercontent.com/87367047/183663722-f3d1a131-3b00-4a45-a163-8d1c4bf31649.gif)
+
 
 This project has been produced by using :
 * React Redux-toolkit (Store - Slicer - useSelector - useDispatch)
