@@ -339,12 +339,12 @@
         display: flex;
         grid-gap: 1em;
         overflow: hidden;
-        width: 55em;
+        width: 20em;
     }
     
     .wrapper .inner {
         display: flex;
-        grid-gap: 2em;
+        grid-gap: 1em;
         transition: all 1s ease;
         transform: translateX(-0%);
     }
@@ -353,21 +353,21 @@
     
     .wrapper .inner-A {
         display: flex;
-        grid-gap: 1em;
+        grid-gap: 0.5em;
         transition: all 1s ease;
         transform: translateX(-25%);
     }
     
     .wrapper .inner-B {
         display: flex;
-        grid-gap: 1em;
+        grid-gap: 0.5em;
         transition: all 1s ease;
         transform: translateX(-50%);
     }
     
     .wrapper .inner-C {
         display: flex;
-        grid-gap: 1em;
+        grid-gap: 0.5em;
         transition: all 1s ease;
         transform: translateX(-75%);
     }
@@ -384,9 +384,9 @@
             border-top-right-radius: inherit;
             border-top-left-radius: inherit;
             display: block;
-            width: 26em;
-            height: 375px;
-            border: 10px solid white;
+            width: 20em;
+            height: 300px;
+            border: 5px solid white;
             border-radius: 1rem;
           }
     
@@ -406,7 +406,7 @@
     
     }
     .map{
-        width: 27em;
+        width: 20em;
         background-color: rgba(255, 255, 255, 0.6);
     }
     .map-container{
@@ -417,8 +417,8 @@
     
     .map button {
         all: unset;
-        width: 1em;
-        height: 1em;
+        width: 0.5em;
+        height: 0.5em;
         background: white;
         text-align: center;
         cursor: pointer;
